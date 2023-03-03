@@ -77,7 +77,7 @@ CSS检查代码规范使用 stylelint 插件
 ## 使用说明
 
  1.推荐使用yarn
- 2.拉取代码 git clone XXXXXX
+ 2.拉取代码 git clone https://github.com/wskang12138/admin-template.git
  3.安装依赖 yarn install
  4.启动：yarn dev
    打包测试：yarn build:test

@@ -71,7 +71,7 @@ Use prettier
 
 ## Instructions for use
 1. Yarn is recommended
-2. Pull the code git clone XXXXXX
+2. Pull the code git clone https://github.com/wskang12138/admin-template.git
 3. Installation depends on yarn install
 4. Start: yarn dev
 Package test: yarn build: test
