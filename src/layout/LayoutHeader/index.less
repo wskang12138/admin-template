@@ -1,0 +1,76 @@
+@import url('@/styles/variables.less');
+
+.ant-layout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: @topHeight;
+  background-color: @top;
+  border-bottom: 1px solid #f6f6f6;
+
+  .header-ri {
+    display: flex;
+    align-items: center;
+
+    .Full {
+      display: flex;
+      margin: 0 30px;
+      color: #f6f6f6;
+
+      .anticon svg {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .icon-style {
+      margin-right: 22px;
+      font-size: 19px;
+      line-height: 19px;
+      cursor: pointer;
+    }
+
+    .username {
+      margin: 0 20px 0 0;
+      font-size: 15px;
+    }
+
+    .ant-avatar {
+      cursor: pointer;
+    }
+  }
+}
+
+.theme-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+
+  span {
+    font-size: 14px;
+  }
+
+  .ant-switch {
+    width: 46px;
+  }
+}
+
+.divider {
+  margin: 0 0 22px !important;
+  font-size: 15px !important;
+
+  .anticon {
+    margin-right: 10px;
+  }
+}
+
+.ant-divider-with-text::before,
+.ant-divider-with-text::after {
+  border-top: 1px solid #dcdfe6 !important;
+}

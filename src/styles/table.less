@@ -1,0 +1,49 @@
+.table-container {
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+
+  .op-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+
+    .label {
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+
+  .data-table {
+    height: calc(100% - 64px);
+    overflow: auto;
+
+    .ant-table-thead > tr > th {
+      font-weight: 600;
+    }
+  }
+}
+
+.table-op {
+  // 表格操作样式
+  .ant-btn-link {
+    padding: 4px 10px;
+  }
+}
+
+.table-op-editing {
+  // 编辑中的操作列样式
+  .ant-btn-link {
+    padding: 4px 10px;
+    color: #f00;
+  }
+}
+
+.rulesEllipse::after {
+  display: inline-block;
+  margin-left: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  line-height: 1;
+  content: '*';
+}

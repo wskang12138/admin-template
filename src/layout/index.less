@@ -1,0 +1,66 @@
+@import url('@/styles/variables.less');
+
+@common: {
+  transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+};
+
+.layout {
+  width: 100%;
+  height: 100%;
+  background-color: @Body;
+
+  .header {
+    width: 100%;
+    height: @topHeight;
+  }
+
+  .bottom {
+    display: flex;
+    width: 100%;
+    height: calc(100% - @topHeight);
+
+    .leftmenu {
+      width: 202px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      @common();
+    }
+
+    .iscollLeft {
+      width: 80px;
+      @common();
+    }
+
+    .rightContent {
+      box-sizing: border-box;
+      width: calc(100% - 202px);
+      height: 100%;
+      padding: 24px;
+      background-color: @Body;
+      @common();
+
+      .breadcrumb {
+        width: 100%;
+        height: 20px;
+        background-color: @Body;
+      }
+
+      .container {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        height: calc(100% - 20px);
+        margin-top: 20px;
+        padding: 15px;
+        overflow: auto;
+        background-color: white;
+        border-radius: 5px;
+      }
+    }
+
+    .iscollright {
+      width: calc(100% - 80px);
+      @common();
+    }
+  }
+}

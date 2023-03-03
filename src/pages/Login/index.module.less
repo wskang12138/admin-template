@@ -1,0 +1,88 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 40px;
+  background-image: url('@/assets/images/login/login_bg.svg');
+  background-position: 50%;
+  background-size: 100% 100%;
+  background-size: cover;
+
+  .contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 546px;
+    background: linear-gradient(to left top, #676767, rgb(255 255 255 / 0%));
+
+    .loginBox {
+      width: 460px;
+      height: 500px;
+      border-radius: 8px;
+
+      .loginTitle {
+        padding-left: 50px;
+        color: #fff;
+
+        .login {
+          font-weight: 700;
+          font-size: 48px;
+        }
+
+        .welcome {
+          font-weight: 400;
+          font-size: 16px;
+        }
+      }
+
+      .formBox {
+        padding: 38px 50px 0;
+
+        .span {
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+        .loginInput {
+          height: 50px;
+          font-size: 16px;
+        }
+
+        .loginIcon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .remember {
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .loginBtn {
+        width: 360px;
+        height: 54px;
+        margin-top: 26px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 54px;
+        text-align: center;
+        background: linear-gradient(to bottom, #0026e2, #206aff);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .tip {
+        margin-top: 26px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

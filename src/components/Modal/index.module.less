@@ -1,0 +1,71 @@
+:global .ant-modal-wrap {
+  overflow: hidden;
+}
+
+.preview-modal {
+  padding: 0 !important;
+
+  :global .ant-modal-body {
+    padding: 0;
+  }
+
+  .preview-modal-head {
+    display: flex;
+    flex: 0 0 38px;
+    align-items: center;
+    justify-content: space-between;
+    height: 38px;
+    padding: 0 8px;
+
+    &-title {
+      display: flex;
+    }
+
+    &-options {
+      color: #aaa;
+
+      span:hover {
+        color: #2a3a4a;
+        cursor: pointer;
+      }
+    }
+
+    .tag {
+      width: 40px;
+      font-size: 12px;
+      line-height: 1.25rem;
+      text-align: center;
+      border-radius: 2px;
+    }
+
+    .file-tag {
+      color: #52c41a;
+      background: #f6ffed;
+      border: 1px solid #b7eb8f;
+    }
+
+    .video-tag {
+      color: #ef5da8;
+      background: #fcddec;
+      border: 1px solid #f178b6;
+    }
+
+    .title-text {
+      margin: 0 0.5em;
+      color: #1a2a3a;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  .preview-modal-body {
+    height: calc(100% - 38px);
+    padding: 20px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .preview-modal-container {
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,149 @@
+* {
+  /* 初始化 */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.spanCss {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 40px;
+  height: 40px;
+  background: conic-gradient(
+    from 90deg at 50% 0,
+    green 0,
+    green 45deg,
+    transparent 45.1deg
+  );
+  /* 发光效果 */
+  box-shadow: 0 0 0 4px rgb(255 255 255 / 10%), 0 0 0 8px rgb(255 255 255 / 10%),
+    0 0 20px rgb(255 255 255 / 100%);
+  /* 执行动画 */
+  animation: animate 3s linear infinite;
+}
+/* 拖尾效果 */
+.spanCss::before {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+  transform: translateY(-50%);
+  content: '';
+}
+/* 接下来分别为每一个流星设置位置、动画延迟时间、动画时长 */
+.spanCss:nth-child(1) {
+  top: 0;
+  right: 0;
+  /* initial关键字用于设置CSS属性为它的默认值 */
+  left: initial;
+  /* 动画时长 */
+  animation-duration: 1s;
+  /* 动画延迟时间 */
+  animation-delay: 0s;
+}
+
+.spanCss:nth-child(2) {
+  top: 0;
+  right: 80px;
+  left: initial;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+}
+
+.spanCss:nth-child(3) {
+  top: 80px;
+  right: 0;
+  left: initial;
+  animation-duration: 2s;
+  animation-delay: 0.4s;
+}
+
+.spanCss:nth-child(4) {
+  top: 0;
+  right: 180px;
+  left: initial;
+  animation-duration: 1.5s;
+  animation-delay: 0.6s;
+}
+
+.spanCss:nth-child(5) {
+  top: 0;
+  right: 400px;
+  left: initial;
+  animation-duration: 2.5s;
+  animation-delay: 0.8s;
+}
+
+.spanCss:nth-child(6) {
+  top: 0;
+  right: 600px;
+  left: initial;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.spanCss:nth-child(7) {
+  top: 300px;
+  right: 0;
+  left: initial;
+  animation-duration: 1.75s;
+  animation-delay: 1.2s;
+}
+
+.spanCss:nth-child(8) {
+  top: 0;
+  right: 700px;
+  left: initial;
+  animation-duration: 1.25s;
+  animation-delay: 1.4s;
+}
+
+.spanCss:nth-child(9) {
+  top: 0;
+  right: 1000px;
+  left: initial;
+  animation-duration: 2.25s;
+  animation-delay: 0.75s;
+}
+
+.spanCss:nth-child(10) {
+  top: 0;
+  right: 450px;
+  left: initial;
+  animation-duration: 2.25s;
+  animation-delay: 2.75s;
+}
+/* 定义动画 */
+/* 背景缩放动画 */
+@keyframes animateBg {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+/* 流星划过动画 */
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(315deg) translateX(-1300px);
+    opacity: 0;
+  }
+}
