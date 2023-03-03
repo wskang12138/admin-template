@@ -42,8 +42,7 @@ Use prettier
 }
 ```
 ## Overall engineering structure
-```bash
-├─ .vscode               
+```bash         
 ├─ public            
 ├─ src
 │  ├─ api              

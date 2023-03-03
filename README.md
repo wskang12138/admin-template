@@ -48,7 +48,6 @@ CSS检查代码规范使用 stylelint 插件
 ## 总体工程结构
 ```bash
 .
-├─ .vscode                # vscode推荐配置
 ├─ public                 # 静态资源文件（忽略打包）
 ├─ src
 │  ├─ api                 # API 接口管理
