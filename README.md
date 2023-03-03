@@ -2,11 +2,11 @@
 
 简体中文 | [English](./README.en-US.md)
 
-#### 介绍
+## 介绍
 
 一个使用 react+vite3+ts+react-router-dom6V搭建的轻量级后台管理模板。
 
-#### 特点
+## 特点
 
 - 轻量级没有那么多其它的插件
 - 已对```axios```进行再次封装,可以直接使用，进行请求接口时采用再次封装的```npropress```。
@@ -15,16 +15,16 @@
 - 已配置好规范化文件。
 - 代码简单，易懂，适合初学者学习。
 
-#### 规范
-##### 代码规范之JS/TS规范
+## 规范
+### 代码规范之JS/TS规范
 使用eslint
-##### 代码规范之CSS规范
+### 代码规范之CSS规范
 CSS检查代码规范使用 stylelint 插件
-##### 提交规范
+### 提交规范
 使用commitlint
-##### 自动化格式代码
+### 自动化格式代码
 使用prettier
-##### 配合husky,提交规范检测格式配置如下：
+### 配合husky,提交规范检测格式配置如下：
 ```bash
   "husky": {
     "hooks": {
@@ -45,7 +45,7 @@ CSS检查代码规范使用 stylelint 插件
     ]
   }
  ```
-#### 总体工程结构
+## 总体工程结构
 
 .
 ├── README.md
@@ -74,7 +74,7 @@ CSS检查代码规范使用 stylelint 插件
 ├── .gitignore           git忽略配置
 └── vite.config.ts       vite配置
 
-#### 使用说明
+## 使用说明
 
  1.推荐使用yarn
  2.拉取代码 git clone XXXXXX
@@ -84,7 +84,7 @@ CSS检查代码规范使用 stylelint 插件
    打包: yarn build:pro
  5.node版本>=14.0
 
-#### 注意
+## 注意
 重新配置自己的.git需要重新安装lint-staged 不然格式化不会生效
 pre-commit执行
 ```bash
@@ -94,7 +94,7 @@ yarn stylelint
 yarn lint-staged
 ```
 
-#### 参与贡献
+## 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
