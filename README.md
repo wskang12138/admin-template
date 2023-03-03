@@ -46,7 +46,7 @@ CSS检查代码规范使用 stylelint 插件
   }
  ```
 ## 总体工程结构
-
+```bash
 .
 ├── README.md
 ├── index.html           项目入口
@@ -73,9 +73,9 @@ CSS检查代码规范使用 stylelint 插件
 ├── .prettierrc.json     prettier配置
 ├── .gitignore           git忽略配置
 └── vite.config.ts       vite配置
-
+```
 ## 使用说明
-
+```bash
  1.推荐使用yarn
  2.拉取代码 git clone https://github.com/wskang12138/admin-template.git
  3.安装依赖 yarn install
@@ -83,7 +83,7 @@ CSS检查代码规范使用 stylelint 插件
    打包测试：yarn build:test
    打包: yarn build:pro
  5.node版本>=14.0
-
+```
 ## 注意
 重新配置自己的.git需要重新安装lint-staged 不然格式化不会生效
 pre-commit执行
