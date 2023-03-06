@@ -5,12 +5,12 @@
 ## Introduction
 A lightweight background management template built using react+vite3+ts+reat-router-dom6V.
 ## Features
--There are not so many other plug-ins in lightweight
--The 'axis'' has been encapsulated again and can be used directly. The encapsulated 'npropress'' is used when requesting the interface.
--You can use pictures as icons to customize components.
--The route has been configured, and the menu bar refreshes to save the expanded status of the menu in the form of cookies.
--The normalization file has been configured.
--The code is simple, easy to understand, and suitable for beginners to learn.
+- There are not so many other plug-ins in lightweight
+- The 'axis'' has been encapsulated again and can be used directly. The encapsulated 'npropress'' is used when requesting the interface.
+- You can use pictures as icons to customize components.
+- The route has been configured, and the menu bar refreshes to save the expanded status of the menu in the form of cookies.
+- The normalization file has been configured.
+- The code is simple, easy to understand, and suitable for beginners to learn.
 ## Specification
 ### JS/TS specification of code specification
 Use eslint
@@ -42,34 +42,48 @@ Use prettier
 }
 ```
 ## Overall engineering structure
-.
-├── README.md
-├── index.html     
-├── public
-├── src
-│   ├── App.tsx       
-│   ├── api          
-│   ├── assets      
-│   ├── components    
-│   ├── enums           
-│   ├── hooks           
-│   ├── layout      
-│   ├── mock    
-│   ├── pages         
-│   ├── routes        
-│   ├── store      
-│   ├── style      
-│   └── utils           
-│   └── vite-env.d.ts  
-│   ├── main.tsx      
-├── tsconfig.json      
-├── .eslintrc.cjs     
-├── .stylelintrc.cjs    
-├── .prettierrc.json   
-├── .gitignore           
-└── vite.config.ts     
+```bash         
+├─ public            
+├─ src
+│  ├─ api              
+│  ├─ assets            
+│  ├─ components       
+│  ├─ config       
+│  ├─ enums              
+│  ├─ hooks              
+│  ├─ mock                
+│  ├─ layouts            
+│  ├─ routers             
+│  ├─ store            
+│  ├─ styles             
+│  ├─ utils           
+│  ├─ pages             
+│  ├─ App.tsx            
+│  ├─ main.tsx          
+│  └─ vite-env.d.ts       
+├─ .editorconfig          
+├─ .env                  
+├─ .env.development    
+├─ .env.production     
+├─ .eslintignore        
+├─ .eslintrc.cjs         
+├─ .gitignore            
+├─ .prettierignore     
+├─ .prettierrc.json       
+├─ .stylelintignore       
+├─ .stylelintrc.cjs       
+├─ commitlintrc.cjs    
+├─ index.html            
+├─ yarn.lock          
+├─ package.json          
+├─ postcss.config.js      
+├─ README.md            
+├─ tsconfig.json       
+└─ vite.config.ts        
+``` 
 
 ## Instructions for use
+```bash
 1. Yarn is recommended
 2. Pull the code git clone https://github.com/wskang12138/admin-template.git
 3. Installation depends on yarn install
@@ -77,6 +91,7 @@ Use prettier
 Package test: yarn build: test
 Package: yarn build: pro
 5. Node version>=14.0
+```
 ## Attention
 To reconfigure your. git, you need to reinstall lint-staged or the format will not take effect
 Pre-commit execution

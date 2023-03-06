@@ -48,31 +48,44 @@ CSS检查代码规范使用 stylelint 插件
 ## 总体工程结构
 ```bash
 .
-├── README.md
-├── index.html           项目入口
-├── public
-├── src
-│   ├── App.tsx          主应用
-│   ├── api              请求中心
-│   ├── assets           资源目录（图片、less、css等）
-│   ├── components       项目组件
-│   ├── enums            枚举http状态码     
-│   ├── hooks            自定义hooks
-│   ├── layout           页面总体布局   
-│   ├── mock             mock封装   
-│   ├── pages            页面目录
-│   ├── routes           路由配置
-│   ├── store            状态管理
-│   ├── style            公共样式
-│   └── utils            基础工具包
-│   └── vite-env.d.ts    全局声明
-│   ├── main.tsx         主入口
-├── tsconfig.json        ts配置
-├── .eslintrc.cjs        eslint配置
-├── .stylelintrc.cjs     stylint配置
-├── .prettierrc.json     prettier配置
-├── .gitignore           git忽略配置
-└── vite.config.ts       vite配置
+├─ public                 # 静态资源文件（忽略打包）
+├─ src
+│  ├─ api                 # API 接口管理
+│  ├─ assets              # 静态资源文件
+│  ├─ components          # 全局组件
+│  ├─ config              # 全局配置项
+│  ├─ enums               # 项目枚举
+│  ├─ hooks               # 常用 Hooks
+│  ├─ mock                # Mock封装
+│  ├─ layouts             # 框架布局
+│  ├─ routers             # 路由管理
+│  ├─ store               # store
+│  ├─ styles              # 全局样式
+│  ├─ utils               # 工具库
+│  ├─ pages               # 项目所有页面
+│  ├─ App.tsx             # 入口页面
+│  ├─ main.tsx            # 入口文件
+│  └─ vite-env.d.ts       # vite 声明文件
+├─ .editorconfig          # 编辑器配置（格式化）
+├─ .env                   # vite 常用配置
+├─ .env.development       # 开发环境配置
+├─ .env.production        # 生产环境配置
+├─ .eslintignore          # 忽略 Eslint 校验
+├─ .eslintrc.cjs          # Eslint 校验配置
+├─ .gitignore             # git 提交忽略
+├─ .prettierignore        # 忽略 prettier 格式化
+├─ .prettierrc.json       # prettier 配置
+├─ .stylelintignore       # 忽略 stylelint 格式化
+├─ .stylelintrc.cjs       # stylelint 样式格式化配置
+├─ commitlintrc.cjs       # git 提交规范配置
+├─ index.html             # 入口 html
+├─ yarn.lock              # 依赖包包版本锁
+├─ package.json           # 依赖包管理
+├─ postcss.config.js      # postcss 配置
+├─ README.md              # README 介绍
+├─ tsconfig.json          # typescript 全局配置
+└─ vite.config.ts         # vite 配置
+
 ```
 ## 使用说明
 ```bash
