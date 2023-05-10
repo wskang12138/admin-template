@@ -1,10 +1,10 @@
-# react18-vite3-ts-antd4+react-router-dom6V
+# react18-vite4-ts-antd5+react-router-dom6V
 
 简体中文 | [English](./README.en-US.md)
 
 ## 介绍
 
-一个使用 react+vite3+ts+react-router-dom6V搭建的轻量级后台管理模板。
+一个使用 react + vite4 + ts + antd5 + react-router-dom6V搭建的轻量级后台管理模板。
 
 ## 特点
 
