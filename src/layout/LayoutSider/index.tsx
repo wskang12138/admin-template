@@ -63,6 +63,7 @@ const LayoutSider = props => {
       className="slider"
       key={`${pathname}+${Math.random()}`}
       collapsed={isCollapse as boolean}
+      width={240}
     >
       <Menu
         theme="light"

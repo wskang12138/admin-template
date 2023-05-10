@@ -9,9 +9,9 @@ import Theme from './components/SwitchDark'
 
 import './index.less'
 
-const LayoutHeader = (props: any) => {
+const LayoutHeader = (props: { className?: string }) => {
   return (
-    <Header>
+    <Header {...props}>
       <div className="header-lf">
         <Logo />
       </div>
