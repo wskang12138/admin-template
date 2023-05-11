@@ -1,7 +1,71 @@
 @import url('@/styles/variables.less');
+@common: {
+  left: -20px;
+  filter: drop-shadow(@meunTextSelect 20px 0);
+  transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) background
+    0.3s cubic-bezier(0.645, 0.045, 0.355, 1) padding 0.15s
+    cubic-bezier(0.645, 0.045, 0.355, 1);
+};
 
 .slider {
-  height: 100%;
   min-height: calc(100vh - 55px);
   background: #fff !important;
+
+  .ant-menu {
+    width: 100%;
+    height: 100%;
+    color: @meunText;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: @meunBackground !important;
+
+    .ant-menu-item-selected {
+      background-color: @meunSelect;
+
+      .icon-wp > .icon {
+        @common();
+      }
+    }
+
+    .ant-menu-item-active {
+      > .icon-wp > .icon {
+        @common();
+      }
+    }
+
+    .ant-menu-submenu-selected {
+      color: @meunTextSelect;
+
+      > .ant-menu-submenu-title {
+        i {
+          color: @meunTextSelect;
+        }
+
+        .icon-wp {
+          img {
+            @common();
+          }
+        }
+      }
+
+      ul > .icon-wp {
+        img {
+          @common();
+        }
+      }
+    }
+
+    .ant-menu-submenu-title:hover {
+      background-color: @meunSelect;
+
+      .icon-wp > .icon {
+        @common();
+      }
+    }
+  }
+
+  .ant-menu-inline,
+  .ant-menu-item {
+    border: none;
+  }
 }
