@@ -31,18 +31,18 @@ module.exports = {
         'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'react/jsx-uses-react': 2,
-        eqeqeq: 2, // 强制使用 === 和 !==
+        'eqeqeq': 2, // 强制使用 === 和 !==
         'default-case': 1, // 要求 switch 语句中有 default 分支
         'no-else-return': 1, // 禁止 if 语句中 return 语句之后有 else 块
         'no-empty-function': 0, // 禁止出现空函数
         'no-multi-spaces': 1, // 禁止使用多个空格
-        radix: 1, // 强制在parseInt()使用基数参数
+        'radix': 1, // 强制在parseInt()使用基数参数
         'no-unused-vars': 'off',
         'init-declarations': ['error', 'always'], // 声明变量必须赋值
         // 'array-bracket-spacing': ['error', 'always'], // 数组方括号内必须空格
         'array-bracket-spacing': 0, // 数组方括号内必须空格
         // 双峰驼命名格式
-        camelcase: 2,
+        'camelcase': 2,
         // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号，
         // always-multiline：多行模式必须带逗号，单行模式不能带逗号
         'comma-dangle': [2, 'never'],
@@ -54,8 +54,8 @@ module.exports = {
         'key-spacing': ['error', { beforeColon: false, afterColon: true }],
         // 关键字（if、else等）前后必须有空格
         'keyword-spacing': ['error', { before: true, after: true }],
-        semi: ['error', 'never'], // 禁止末尾分号
-        quotes: ['error', 'single'], // 单引号
+        'semi': ['error', 'never'], // 禁止末尾分号
+        'quotes': ['error', 'single'], // 单引号
         'space-infix-ops': 2, // 操作符周围必须有空格
         'spaced-comment': ['error', 'always'], // 注释后面必须跟随至少一个空白
     
@@ -66,12 +66,7 @@ module.exports = {
         'object-shorthand': 2, // 要求使用对象方法名和属性名简写
         'prefer-arrow-callback': 2, // 要求回调函数使用箭头函数
         'prefer-rest-params': 2, // 要求使用剩余参数而不是 arguments
-        /**
-         * vue
-         */
-        'vue/valid-v-model': 0,
-        endOfline: 0,
-    
+        'endOfline': 0,
         // typeScript (https://typescript-eslint.io/rules)
         '@typescript-eslint/no-unused-vars': 'error', // 禁止定义未使用的变量
         '@typescript-eslint/no-inferrable-types': 'off', // 可以轻松推断的显式类型可能会增加不必要的冗长

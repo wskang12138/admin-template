@@ -36,10 +36,7 @@
 .conic::before,
 .conic::after {
   position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
+  inset: -2px;
   border: 2px solid #42ec868a;
   border-radius: 5px;
   animation: loading-clip 3s infinite linear;
