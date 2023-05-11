@@ -1,4 +1,4 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 //  深拷贝
 export const deepClone = (data: any) => {
@@ -48,17 +48,17 @@ export const formatDateTime = (formValues: any, searchData: any) => {
     if (item.valueType === 'datePicker' && formValues[item.dataIndex]) {
       switch (item.picker) {
         case 'year':
-          result[item.dataIndex] = moment(formValues[item.dataIndex]).format(
+          result[item.dataIndex] = dayjs(formValues[item.dataIndex]).format(
             'YYYY'
           )
           break
         case 'month':
-          result[item.dataIndex] = moment(formValues[item.dataIndex]).format(
+          result[item.dataIndex] = dayjs(formValues[item.dataIndex]).format(
             'YYYY-MM'
           )
           break
         default:
-          result[item.dataIndex] = moment(formValues[item.dataIndex]).format(
+          result[item.dataIndex] = dayjs(formValues[item.dataIndex]).format(
             'YYYY-MM-DD HH:mm:ss'
           )
           break
@@ -71,10 +71,10 @@ export const formatDateTime = (formValues: any, searchData: any) => {
         (time: any, index: number) => {
           if (item.showTime) {
             return index === 0
-              ? moment(time).format('YYYY-MM-DD 00:00:00')
-              : moment(time).format('YYYY-MM-DD 23:59:59')
+              ? dayjs(time).format('YYYY-MM-DD 00:00:00')
+              : dayjs(time).format('YYYY-MM-DD 23:59:59')
           } else {
-            return moment(time).format('YYYY-MM-DD HH:mm:ss')
+            return dayjs(time).format('YYYY-MM-DD HH:mm:ss')
           }
         }
       )

@@ -10,16 +10,16 @@ export default defineConfig({
     react(),
     visualizer(),
     // antd 按需加载
-    vitePluginImp({
-      libList: [
-        {
-          libName: 'antd',
-          style(name) {
-            return `antd/es/${name}/style/index.less`
-          }
-        }
-      ]
-    }),
+    // vitePluginImp({
+    //   libList: [
+    //     {
+    //       libName: 'antd',
+    //       style(name) {
+    //         return `antd/es/${name}/style/index.less`
+    //       }
+    //     }
+    //   ]
+    // }),
     viteCompression({
       verbose: true,
       disable: false,

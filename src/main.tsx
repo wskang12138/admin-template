@@ -5,17 +5,15 @@ import App from './App'
 import './styles/index.less'
 import { ConfigProvider } from 'antd' // 国际化全局组件
 import zhCN from 'antd/es/locale/zh_CN'
-import 'moment/dist/locale/zh-cn' // 中文
 import ErrorFallback from '@/layout/ErrorFallback'
 import ErroyBoundary from '@/components/ErrorBoundary'
 import store, { persistor } from './store/index'
 import { PersistGate } from 'redux-persist/integration/react'
-import 'antd/dist/antd.variable.min.css';
 
 ConfigProvider.config({
   theme: {
-    primaryColor: '#2F6FFF',
-  },
+    primaryColor: '#2F6FFF'
+  }
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
