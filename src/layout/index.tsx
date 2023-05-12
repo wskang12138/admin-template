@@ -6,6 +6,7 @@ import Header from './LayoutHeader'
 import CustomBreadcrumb from './BreadCrumb'
 import { memo, useState } from 'react'
 import classNames from 'classnames'
+
 const Layouts = () => {
   const [isCollapse, setIsCollapse] = useState<Boolean>(false) // 进行一个切换的控制。
   return (

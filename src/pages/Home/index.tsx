@@ -17,12 +17,12 @@ const Home = () => {
       <Card
         style={{
           background: 'linear-gradient(135deg,#005aa7,#fffde4)',
-          height: '140px'
+          height: '160px'
         }}
       >
         <h2>每日一句</h2>
         <p>{dailySentence.hitokoto}</p>
-        <p style={{ textAlign: 'right', position: 'relative', top: '-20px' }}>
+        <p style={{ textAlign: 'right' }}>
           {dailySentence.fromWho || ''} 【{dailySentence.from}】
         </p>
       </Card>
