@@ -7,10 +7,10 @@ import {
 } from '@/config/serviceLoading'
 import { ResultEnum } from '@/enums/httpEnum'
 import { checkStatus } from './helper/checkStatus'
-import { AxiosCanceler } from './helper/axiosCancel'
+// import { AxiosCanceler } from './helper/axiosCancel'
 
-const axiosCanceler = new AxiosCanceler()
-let configTemp: any = ''
+// const axiosCanceler = new AxiosCanceler()
+// let configTemp: any = ''
 const request = axios.create({
   // 默认地址请求地址，可在 .env 开头文件中修改
   baseURL: import.meta.env.VITE_API_URL as string,
@@ -23,10 +23,10 @@ request.interceptors.request.use(
   (config: any) => {
     NProgress.start()
     // * 将当前请求添加到 pending 中
-    axiosCanceler.addPending(config)
+    // axiosCanceler.addPending(config)
     // * 如果当前请求不需要显示 loading,在api服务中通过指定的第三个参数: { headers: { noLoading: true } }来控制不显示loading，参见loginApi
     config.headers!.noLoading || showFullScreenLoading()
-    configTemp = config
+    // configTemp = config
     const token = localStorage.getItem('token')
     if (!config.headers.Authorization && token) {
       config.headers['Authorization'] = token
@@ -43,7 +43,7 @@ request.interceptors.response.use(
   (response: any) => {
     NProgress.done()
     // * 在请求结束后，移除本次请求(关闭loading)
-    axiosCanceler.removePending(configTemp)
+    // axiosCanceler.removePending(configTemp)
     tryHideFullScreenLoading()
     const res = response.data
     if (res.code === ResultEnum.OVERDUE) {
